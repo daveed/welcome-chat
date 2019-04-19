@@ -19,6 +19,8 @@ gem 'jquery-rails'
 gem 'simple_form', '~> 4.1.0'
 gem 'redis', '~> 4.1.0'
 gem 'dotenv-rails'
+gem 'action-cable-testing'
+gem 'minitest'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
