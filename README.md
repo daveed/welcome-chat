@@ -38,7 +38,7 @@ ____
 
 A user creates an account and/or logs in  
 A user creates or joins a room  
-The client subscribes to the room channel
+The client subscribes to the room channel  
 A user submits a message  
 The message is posted to the RoomMessages Controller  
 The message is persisted in Postgres  
