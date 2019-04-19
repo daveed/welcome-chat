@@ -13,7 +13,7 @@ services:
       - '3000:3000'
     links:
       - redis
-      # - db
+      - db
     stdin_open: true
     tty: true
 
@@ -24,17 +24,17 @@ services:
     ports:
       - "6379:6379"
 
-  # db:
-  #   image: postgres:9.6
-  #   env_file: .env
-  #   environment:
-  #     POSTGRES_USER: ${POSTGRES_USER}
-  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-  #   volumes:
-  #     - postgres:/var/lib/postgresql/data
-  #   ports:
-  #     - '5432:5432'
+  db:
+    image: postgres:11.2
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
 
 volumes:
   redis:
-  # postgres:
+  postgres:
