@@ -4,7 +4,7 @@ ____
 
 ## Overview
 
-A Rails 5 chat app using websockets.
+A Rails 5 chat app using websockets
 
 ____
 
