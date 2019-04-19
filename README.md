@@ -11,6 +11,7 @@ ____
 ## Getting Started
 
 ```shell
+  docker-compose build --force-rm
   docker-compose up --remove-orphans
 ```
 
