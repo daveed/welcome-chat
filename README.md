@@ -11,8 +11,7 @@ ____
 ## Getting Started
 
 ```shell
-  ./bin/docker-build
-  ./bin/docker-up
+  ./bin/start-me-up
 ```
 
 ____
