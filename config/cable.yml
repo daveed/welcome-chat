@@ -1,12 +1,12 @@
 development:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://redis:6379/1" } %>
-  channel_prefix: welcome-chat-development
+  channel_prefix: welcome_chat_development
 
 test:
-  adapter: async
+  adapter: test
 
 production:
   adapter: redis
-  url: redis://redistogo:97dead7d876190d4c3c4279070084dea@pearlfish.redistogo.com:9273/
-  channel_prefix: welcome-chat-production
+  url: redis://redistogo:xxxxxxxx@xxxxxxxx.redistogo.com:9273/
+  channel_prefix: welcome_chat_production

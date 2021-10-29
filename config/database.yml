@@ -1,6 +1,6 @@
 default: &default
   adapter: postgresql
-  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   host: <%= ENV.fetch('POSTGRES_HOST') %>
   username: <%= ENV.fetch('POSTGRES_USER') %>
@@ -8,7 +8,6 @@ default: &default
 
 development:
   <<: *default
-  # host: localhost
   database: welcome_chat_development
 
 test:

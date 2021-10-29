@@ -1,4 +1,4 @@
-FROM ruby:2.6.2-slim
+FROM ruby:3.0.2-slim
 
 ENV BUILD_PACKAGES="build-essential" \
     DEV_PACKAGES="libpq-dev libsqlite3-dev" \

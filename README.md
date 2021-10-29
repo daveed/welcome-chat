@@ -4,15 +4,15 @@ ____
 
 ## Overview
 
-A Rails 5 chat app using websockets
+A Rails 6 chat app using websockets
 
 ____
 
 ## Getting Started
 
 ```shell
-  docker-compose build --force-rm
-  docker-compose up --remove-orphans
+  ./bin/docker-build
+  ./bin/docker-up
 ```
 
 ____
@@ -22,7 +22,7 @@ ____
 connections, channels, broadcasts
 
 ```shell
-  docker-compose run --rm -e RAILS_ENV=test rails rake test
+  ./bin/test
 ```
 
 ____
@@ -31,7 +31,7 @@ ____
 
 The entire project runs on Docker.  
 Dependencies are Postresql and Redis for pub/sub.  
-The versions used are Rails 5.2.3, Ruby 2.6.2, Postgres 11.2 and Redis 5.0.4  
+The versions used are Rails 6.1.4, Ruby 3.0.2, Postgres 11.2 and Redis 5.0.4  
 ____
 
 ## Mechanism
